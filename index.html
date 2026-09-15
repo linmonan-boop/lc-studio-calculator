@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>L × C 健身工作室合伙经营方案</title>
+<meta name="description" content="L × C 健身工作室投入、利润、分红与回本测算工具" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232f5bea'/%3E%3Cpath d='M16 27h6v10h-6zm26 0h6v10h-6zM23 23h6v18h-6zm12 0h6v18h-6zM29 29h6v6h-6z' fill='white'/%3E%3C/svg%3E" />
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#e7eaf0;--accent:#2f5bea;--accent2:#eef3ff;--good:#147d64;--warn:#b54708;--bad:#b42318;--shadow:0 10px 30px rgba(22,34,66,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}.wrap{max-width:1220px;margin:auto;padding:28px}.hero{background:linear-gradient(135deg,#172554,#2f5bea);color:#fff;border-radius:24px;padding:34px;box-shadow:var(--shadow)}.hero h1{margin:0 0 8px;font-size:34px}.hero p{margin:0;opacity:.9}.badge{display:inline-block;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.14);margin-right:8px;font-size:13px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.span12{grid-column:span 12}.span8{grid-column:span 8}.span6{grid-column:span 6}.span4{grid-column:span 4}.span3{grid-column:span 3}h2{font-size:22px;margin:0 0 14px}h3{font-size:17px;margin:0 0 10px}.muted{color:var(--muted)}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi{background:#f8faff;border:1px solid #e6ebff;padding:16px;border-radius:14px}.kpi b{display:block;font-size:24px;margin-top:3px}.inputs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.field{padding:12px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe}.field label{display:block;font-size:12px;color:var(--muted);margin-bottom:5px}.field input{width:100%;border:0;background:transparent;font-size:17px;font-weight:650;color:var(--ink);outline:none}.unit{font-size:12px;color:var(--muted)}table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:11px 9px;text-align:left;vertical-align:top}th{background:#f8f9fc;color:#475467}.tag{display:inline-block;border-radius:999px;padding:3px 8px;font-size:12px;font-weight:700}.L{background:#eef4ff;color:#1d4ed8}.C{background:#ecfdf3;color:#027a48}.both{background:#fff6ed;color:#b54708}.formula{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#f6f8fa;border:1px solid var(--line);padding:10px 12px;border-radius:10px;font-size:13px}.result{display:flex;justify-content:space-between;align-items:end;border-bottom:1px dashed var(--line);padding:9px 0}.result strong{font-size:18px}.good{color:var(--good)}.bad{color:var(--bad)}.warn{color:var(--warn)}.note{padding:13px 15px;background:#fff9eb;border:1px solid #fde4a7;border-radius:12px;color:#7a4a00}.small{font-size:12px}.section-nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.section-nav a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.25);padding:7px 10px;border-radius:999px;font-size:13px}.bar{height:11px;background:#edf0f5;border-radius:999px;overflow:hidden}.bar>i{display:block;height:100%;background:linear-gradient(90deg,#2f5bea,#7c9cff);width:0}.footer{text-align:center;color:var(--muted);font-size:12px;padding:26px}.print{position:fixed;right:22px;bottom:22px;background:#172554;color:#fff;border:0;border-radius:999px;padding:12px 16px;box-shadow:var(--shadow);cursor:pointer}@media(max-width:900px){.span8,.span6,.span4,.span3{grid-column:span 12}.inputs,.kpis{grid-template-columns:1fr 1fr}.wrap{padding:14px}.hero{padding:24px}.hero h1{font-size:28px}}@media(max-width:560px){.inputs,.kpis{grid-template-columns:1fr}.hero h1{font-size:24px}}@media print{body{background:#fff}.wrap{max-width:none;padding:0}.card,.hero{box-shadow:none}.print{display:none}.section-nav{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+  <div><span class="badge">L：40%股东</span><span class="badge">C：60%股东</span><span class="badge">可编辑利润计算器</span></div>
+  <h1>L × C 健身工作室合伙经营方案</h1>
+  <p>调整关键参数，实时测算启动投入、月度利润、双方收入和回本周期。</p>
+  <div class="section-nav"><a href="#income">收入结构</a><a href="#calculator">利润计算器</a></div>
+</section>
+
+<div class="grid">
+<section class="card span12" id="income">
+<h2>三、双方收入结构</h2>
+<div class="formula">L收入 = 公域课时费 + 个人IP课时费 + 后台运营津贴 + 40%可分配利润</div>
+<div class="formula" style="margin-top:10px">C收入 = 公域课时费 + 个人IP课时费 + 驻店管理津贴 + 60%可分配利润</div>
+<p class="muted small">这样可以同时反映资金投入、实际授课、后台/现场管理劳动和公司经营成果。</p>
+</section>
+
+<section class="card span12" id="calculator">
+<h2>四、投资、经营成本与利润计算器</h2>
+<p class="muted">金额输入按“一次性投入 / 月固定经营 / 课程与收入变量”拆分。所有浅色输入框均可修改，下方利润、分红、课时和回本结果实时联动。</p>
+
+<h3>① 一次性投入 / 启动资金</h3>
+<div class="inputs">
+<div class="field"><label>年租金（首年一次支付口径）</label><input id="annualRent" type="number" value="150000"><span class="unit">元/年</span></div>
+<div class="field"><label>装修 + 器械一次性投入</label><input id="fitout" type="number" value="70000"><span class="unit">元</span></div>
+<div class="field"><label>押金 / 开业初期杂费</label><input id="deposit" type="number" value="20000"><span class="unit">元</span></div>
+<div class="field"><label>首期现金储备</label><input id="cashReserve" type="number" value="0"><span class="unit">元</span></div>
+<div class="field"><label>L 股权</label><input id="lEquity" type="number" value="40"><span class="unit">%</span></div>
+<div class="field"><label>C 股权</label><input id="cEquity" type="number" value="60"><span class="unit">%</span></div>
+</div>
+
+<h3 style="margin-top:24px">② 每月固定经营成本</h3>
+<div class="inputs">
+<div class="field"><label>L 后台运营津贴</label><input id="lOps" type="number" value="0"><span class="unit">元/月</span></div>
+<div class="field"><label>C 驻店管理津贴</label><input id="cOps" type="number" value="3000"><span class="unit">元/月</span></div>
+<div class="field"><label>水电费</label><input id="utilities" type="number" value="1000"><span class="unit">元/月</span></div>
+<div class="field"><label>物业 / 网络</label><input id="propertyNet" type="number" value="1000"><span class="unit">元/月</span></div>
+<div class="field"><label>保洁 / 日常耗材</label><input id="cleaning" type="number" value="1000"><span class="unit">元/月</span></div>
+<div class="field"><label>营销获客预算</label><input id="marketing" type="number" value="1000"><span class="unit">元/月</span></div>
+<div class="field"><label>软件 / 财税 / 其他固定成本</label><input id="otherFixed" type="number" value="1000"><span class="unit">元/月</span></div>
+<div class="field"><label>其他月收入（团课/场租等）</label><input id="otherRevenue" type="number" value="0"><span class="unit">元/月</span></div>
+</div>
+
+<h3 style="margin-top:24px">③ 课程、会员与收入变量</h3>
+<div class="inputs">
+<div class="field"><label>公域课程客单价</label><input id="publicPrice" type="number" value="230"><span class="unit">元/节</span></div>
+<div class="field"><label>个人IP课程客单价</label><input id="ipPrice" type="number" value="230"><span class="unit">元/节</span></div>
+<div class="field"><label>公域课程课时费</label><input id="publicCoachPay" type="number" value="90"><span class="unit">元/节</span></div>
+<div class="field"><label>个人IP课程课时费</label><input id="ipCoachPay" type="number" value="140"><span class="unit">元/节</span></div>
+<div class="field"><label>L公域课程数量</label><input id="lPublicSessions" type="number" value="50"><span class="unit">节/月</span></div>
+<div class="field"><label>C公域课程数量</label><input id="cPublicSessions" type="number" value="100"><span class="unit">节/月</span></div>
+<div class="field"><label>利润留存比例</label><input id="retainRate" type="number" value="20"><span class="unit">%</span></div>
+<div class="field"><label>L个人IP课程数量</label><input id="lIpSessions" type="number" value="40"><span class="unit">节/月</span></div>
+<div class="field"><label>C个人IP课程数量</label><input id="cIpSessions" type="number" value="60"><span class="unit">节/月</span></div>
+</div>
+
+</section>
+
+<section class="card span4"><h3>启动投资</h3><div class="result"><span>总启动资金</span><strong id="startupTotal">-</strong></div><div class="result"><span>L按股权投入</span><strong id="lInvest">-</strong></div><div class="result"><span>C按股权投入</span><strong id="cInvest">-</strong></div></section>
+<section class="card span4"><h3>月度经营</h3><div class="result"><span>月总营业收入</span><strong id="revenue">-</strong></div><div class="result"><span>月固定经营成本</span><strong id="fixedCost">-</strong></div><div class="result"><span>课程课时变动成本</span><strong id="variableCost">-</strong></div><div class="result"><span>月总经营成本</span><strong id="cost">-</strong></div><div class="result"><span>月经营利润</span><strong id="profit">-</strong></div></section>
+<section class="card span4"><h3>保本与回报</h3><div class="result"><span>公域保本课时</span><strong id="breakEven">-</strong></div><div class="result"><span>预计年经营利润</span><strong id="annualProfit">-</strong></div><div class="result"><span>静态回本周期</span><strong id="payback">-</strong></div></section>
+
+<section class="card span12">
+<h2>月度经营成本明细（全部实时联动）</h2>
+<p class="muted">下列金额全部由上方输入参数自动计算。修改年租金、津贴、水电、物业、保洁、营销、课时数量或教练课时费后，本区域及利润、分红、回本周期都会同步变化。</p>
+<table>
+<thead><tr><th>成本项目</th><th>计算方式</th><th>当前月成本</th></tr></thead>
+<tbody>
+<tr><td>房租</td><td>年租金 ÷ 12</td><td id="rentCost">-</td></tr>
+<tr><td>L 后台运营津贴</td><td>按输入值</td><td id="lOpsCost">-</td></tr>
+<tr><td>C 驻店管理津贴</td><td>按输入值</td><td id="cOpsCost">-</td></tr>
+<tr><td>水电费</td><td>按输入值</td><td id="utilitiesCost">-</td></tr>
+<tr><td>物业 / 网络</td><td>按输入值</td><td id="propertyNetCost">-</td></tr>
+<tr><td>保洁 / 日常耗材</td><td>按输入值</td><td id="cleaningCost">-</td></tr>
+<tr><td>营销获客</td><td>按输入值</td><td id="marketingCost">-</td></tr>
+<tr><td>软件 / 财税 / 其他</td><td>按输入值</td><td id="otherFixedCost">-</td></tr>
+<tr><td><b>固定经营成本小计</b></td><td>以上固定成本合计</td><td><b id="fixedCostDetail">-</b></td></tr>
+<tr><td>课程课时费</td><td>L/C公域课时费 + 个人IP课时费</td><td id="coachCostDetail">-</td></tr>
+<tr><td><b>月总经营成本</b></td><td>固定经营成本 + 公域课时变动成本</td><td><b id="totalCostDetail">-</b></td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="card span6"><h2>L 月度收益拆分</h2><div class="result"><span><b>L 每月总上课数量</b></span><strong id="lTotalSessions">-</strong></div><div class="result"><span>其中：公域课程</span><strong id="lPublicSessionsOut">-</strong></div><div class="result"><span>其中：个人IP课程</span><strong id="lIpSessionsOut">-</strong></div><div class="result"><span>公域课程课时费收入</span><strong id="lPublicIncome">-</strong></div><div class="result"><span>个人IP课程课时费收入</span><strong id="lIpIncome">-</strong></div><div class="result"><span>后台运营津贴</span><strong id="lOpsOut">-</strong></div><div class="result"><span>股东分红</span><strong id="lDividend">-</strong></div><div class="result"><span><b>L月综合收入</b></span><strong id="lTotalIncome">-</strong></div></section>
+<section class="card span6"><h2>C 月度收益拆分</h2><div class="result"><span><b>C 每月总上课数量</b></span><strong id="cTotalSessions">-</strong></div><div class="result"><span>其中：公域课程</span><strong id="cPublicSessionsOut">-</strong></div><div class="result"><span>其中：个人IP课程</span><strong id="cIpSessionsOut">-</strong></div><div class="result"><span>公域课程课时费收入</span><strong id="cPublicIncome">-</strong></div><div class="result"><span>个人IP课程课时费收入</span><strong id="cIpIncome">-</strong></div><div class="result"><span>驻店管理津贴</span><strong id="cOpsOut">-</strong></div><div class="result"><span>股东分红</span><strong id="cDividend">-</strong></div><div class="result"><span><b>C月综合收入</b></span><strong id="cTotalIncome">-</strong></div></section>
+
+<section class="card span12">
+<h2>计算口径</h2>
+<div class="formula">工作室收入 = 公域课程总课时 × 公域客单价 + 个人IP课程总课时 × 个人IP客单价 + 其他收入</div>
+<div class="formula" style="margin-top:8px">工作室成本 = 月租金 + L运营津贴 + C驻店津贴 + 水电 + 物业网络 + 保洁耗材 + 营销 + 软件财税其他 + L/C课程课时费</div>
+<div class="formula" style="margin-top:8px">可分配利润 = max(月经营利润 × (1 - 利润留存比例), 0)</div>
+<div class="formula" style="margin-top:8px">股东分红 = 可分配利润 × 股权比例</div>
+<p class="muted small">注：公域与个人IP课程均计入工作室营业收入，再分别按对应课时费向实际授课人结算。</p>
+</section>
+
+</div>
+<div class="footer">L × C 健身工作室合伙方案 · 参数修改后自动重算</div>
+</div>
+<button class="print" onclick="window.print()">打印 / 导出PDF</button>
+<script>
+const ids=['annualRent','fitout','deposit','cashReserve','lEquity','cEquity','publicPrice','ipPrice','publicCoachPay','ipCoachPay','lPublicSessions','cPublicSessions','lIpSessions','cIpSessions','lOps','cOps','utilities','propertyNet','cleaning','marketing','otherFixed','otherRevenue','retainRate'];
+const n=id=>Number(document.getElementById(id).value||0); const money=v=>'¥'+Math.round(v).toLocaleString('zh-CN');
+function set(id,v,cls){let e=document.getElementById(id);e.textContent=v;if(cls){e.className=cls}}
+function calc(){
+ const annualRent=n('annualRent'), monthlyRent=annualRent/12;
+ const startup=annualRent+n('fitout')+n('deposit')+n('cashReserve');
+ const le=n('lEquity')/100, ce=n('cEquity')/100;
+ const lPublicSessions=n('lPublicSessions'), cPublicSessions=n('cPublicSessions');
+ const lIpSessions=n('lIpSessions'), cIpSessions=n('cIpSessions');
+ const publicSessions=lPublicSessions+cPublicSessions;
+ const ipSessions=lIpSessions+cIpSessions;
+ const publicPrice=n('publicPrice'), ipPrice=n('ipPrice');
+ const publicCoachPay=n('publicCoachPay'), ipCoachPay=n('ipCoachPay');
+ const revenue=publicSessions*publicPrice+ipSessions*ipPrice+n('otherRevenue');
+ const partnerPublicCost=(lPublicSessions+cPublicSessions)*publicCoachPay;
+ const partnerIpCost=ipSessions*ipCoachPay;
+ const variableCoach=partnerPublicCost+partnerIpCost;
+ const fixed=monthlyRent+n('lOps')+n('cOps')+n('utilities')+n('propertyNet')+n('cleaning')+n('marketing')+n('otherFixed');
+ const cost=fixed+variableCoach;
+ const profit=revenue-cost;
+ const retain=n('retainRate')/100;
+ const distributable=Math.max(profit*(1-retain),0);
+ const lDiv=distributable*le, cDiv=distributable*ce;
+ const lPublicIncome=lPublicSessions*publicCoachPay, cPublicIncome=cPublicSessions*publicCoachPay;
+ const lIpIncome=lIpSessions*ipCoachPay, cIpIncome=cIpSessions*ipCoachPay;
+ const lTotalSessions=lPublicSessions+lIpSessions;
+ const cTotalSessions=cPublicSessions+cIpSessions;
+ const lTotal=lPublicIncome+lIpIncome+n('lOps')+lDiv;
+ const cTotal=cPublicIncome+cIpIncome+n('cOps')+cDiv;
+ const publicContribution=publicPrice-publicCoachPay;
+ const ipMargin=ipSessions*(ipPrice-ipCoachPay);
+ const otherMargin=ipMargin+n('otherRevenue');
+ const breakEven=publicContribution>0?Math.ceil(Math.max(fixed-otherMargin,0)/publicContribution):Infinity;
+ const annualProfit=profit*12; const payback=annualProfit>0?startup/annualProfit:null;
+ set('startupTotal',money(startup));set('lInvest',money(startup*le));set('cInvest',money(startup*ce));
+ set('revenue',money(revenue));set('fixedCost',money(fixed));set('variableCost',money(variableCoach));set('cost',money(cost));set('profit',money(profit),profit>=0?'good':'bad');
+ set('rentCost',money(monthlyRent));set('lOpsCost',money(n('lOps')));set('cOpsCost',money(n('cOps')));set('utilitiesCost',money(n('utilities')));set('propertyNetCost',money(n('propertyNet')));set('cleaningCost',money(n('cleaning')));set('marketingCost',money(n('marketing')));set('otherFixedCost',money(n('otherFixed')));set('fixedCostDetail',money(fixed));set('coachCostDetail',money(variableCoach));set('totalCostDetail',money(cost));
+ set('breakEven',isFinite(breakEven)?breakEven+' 节/月':'无法保本');set('annualProfit',money(annualProfit),annualProfit>=0?'good':'bad');set('payback',payback?payback.toFixed(1)+' 年':'当前参数下不回本',payback?'':'bad');
+ set('lTotalSessions',Math.round(lTotalSessions)+' 节/月');set('lIpSessionsOut',Math.round(lIpSessions)+' 节');set('lPublicSessionsOut',Math.round(lPublicSessions)+' 节');
+ set('cTotalSessions',Math.round(cTotalSessions)+' 节/月');set('cIpSessionsOut',Math.round(cIpSessions)+' 节');set('cPublicSessionsOut',Math.round(cPublicSessions)+' 节');
+ set('lPublicIncome',money(lPublicIncome));set('lIpIncome',money(lIpIncome));set('lOpsOut',money(n('lOps')));set('lDividend',money(lDiv));set('lTotalIncome',money(lTotal));
+ set('cPublicIncome',money(cPublicIncome));set('cIpIncome',money(cIpIncome));set('cOpsOut',money(n('cOps')));set('cDividend',money(cDiv));set('cTotalIncome',money(cTotal));
+}
+ids.forEach(id=>document.getElementById(id).addEventListener('input',calc));calc();
+</script>
+</body></html>
